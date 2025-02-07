@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title> Quiz 2025 (Placeholder)</title>
+        <style>
+            body {
+                background-color: #a2cac7b8;
+                font-size: 20px;
+            }
+            button{
+                background-color: green;
+                color: black;
+                font-size: 15px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+
+            }
+            button:hover {
+                background-color: orange;
+                color: black;
+                font-size: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .fullname {
+                color: darkgreen;
+                font-size: 30px;
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2></h2>
+        <form method="get" action="form_submitted.html">
+            <!-- Full name Textbox -->
+            <div class="fullName"> 
+                <label for="name">Full Name: </label>
+                <input id="name" type="text"> </input>
+            </div>
+            <br>
+
+            <!-- Language Dropdown -->
+            <label for="language">Native Language: </label>
+            <select name="language" id="language">
+                <option value="" disabled> -- Choose a language -- </option>
+                <option value="english"> English </option>
+                <option value="mandarin"> Madarin </option>
+                <option value="spanish"> Spanish </option>
+                <option value="french"> French </option>
+                <option value="arabic"> Arabic </option>
+                <option value="bangali"> Bengali </option>
+                <option value="russian"> Russian </option>
+                <option value="portuguese"> Portuguese </option>
+                <option value="urdu"> Urdu </option>
+            </select>
+            <br>
+
+            <!-- Gender Radio -->
+            <p> What is your gender? </p>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male"> Male </label>
+            <br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female"> Female </label>
+            <br>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other"> Other </label>
+
+
+            <br>
+            <!-- Submit Button -->
+             <button type="submit"> Click Me </button>
+
+        </form>
+    </body>
+</html>
